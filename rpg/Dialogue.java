@@ -4,17 +4,16 @@ import java.util.*;
 
 public class Dialogue {
 
-    double npc;
-    int input;
-    Scanner sc = new Scanner(System.in);
-    
+    public static void Town(Player player, Npc npc) {
+        
+        int input;
+        Scanner sc = new Scanner(System.in);
+        int npcNumber;
 
-    public void Town() {
-    
-        npc = Math.random() * 4;
+        npcNumber = (int)(Math.random() * 4);
 
-        if(npc==0){
-            System.out.println("Joe");
+        if(npcNumber==0){
+            System.out.println(npc.getName());
             System.out.println("\nWhat would you like to do?");
             System.out.println("\n(1) Ask about his day");
             System.out.println("(2) Ask if he has a key");
@@ -26,25 +25,31 @@ public class Dialogue {
                 case 1: System.out.println("My day has been fine, thank you.");
                 break;
 
-                case 2: System.out.println("No I don't have a key.");
+                case 2: 
+                if(npc.hasKey()){
+                    player.giveKey(npc.getKey());
+                    System.out.println("Here is my key!");
+                } else {
+                    System.out.println("No I don't have a key.");
+                }
                 break;
 
                 default: System.out.println("Alright then, goodbye.");
             }
 
-        } else if (npc==1){
+        } else if (npcNumber==1){
             System.out.println("Jack");
             System.out.println("\nWhat would you like to do?");
 
-        } else if (npc==2){
+        } else if (npcNumber==2){
             System.out.println("Jack");
             System.out.println("\nWhat would you like to do?");
 
-        } else if (npc==3){
+        } else if (npcNumber==3){
             System.out.println("Jack");
             System.out.println("\nWhat would you like to do?");
 
-        } else if (npc==4){
+        } else if (npcNumber==4){
             System.out.println("Jack");
             System.out.println("\nWhat would you like to do?");
 
