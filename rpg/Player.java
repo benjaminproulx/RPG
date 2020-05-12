@@ -72,4 +72,8 @@ public class Player {
         return isAlive;
     }
 
+    public int attack(){
+        return (int)(Math.random()*5 + 1);
+    }
+
 }
