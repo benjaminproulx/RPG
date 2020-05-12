@@ -1,0 +1,31 @@
+> enter your character name
+> exposition - get 3 keys open chest in castle
+> put character in main town
+	town
+	cave
+	chest room in cave
+
+> town 
+7 NPCs;
+
+	- 1 Johnny - Key B
+	- 3 Jaqueline 
+	- 4 Jack - Key C
+	- 5 Jill
+	- 6 Justine
+
+> cave
+	- 2 Johnasuila - Key A
+	3 enemies > randomly generated
+
+> chest room
+	if player has all keys
+	open chest and win the game
+
+
+	talk about something
+	exit
+
+	if they have akey
+	player.givekey
+
