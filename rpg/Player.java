@@ -2,16 +2,16 @@ package rpg;
 
 public class Player {
     
-    String name;
-    String keyAInventory = "";
-    String keyBInventory = "";
-    String keyCInventory = "";
-    int health;
-    int maxHealth;
-    boolean hasKeyA;
-    boolean hasKeyB;
-    boolean hasKeyC;
-    boolean isAlive = true;
+    private String name;
+    private String keyAInventory = "";
+    private String keyBInventory = "";
+    private String keyCInventory = "";
+    private int health;
+    private int maxHealth;
+    private boolean hasKeyA;
+    private boolean hasKeyB;
+    private boolean hasKeyC;
+    private boolean isAlive = true;
 
     public Player(String playerName){
         playerName = playerName.toLowerCase();

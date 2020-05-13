@@ -2,11 +2,11 @@ package rpg;
 
 public class Enemy {
     
-    static int enemyCount = 0;
-    int enemyHealth;
-    String type;
-    boolean isAlive;
-    int damage;
+    private static int enemyCount = 0;
+    private int enemyHealth;
+    private String type;
+    private boolean isAlive;
+    private int damage;
     
     public Enemy(){
         isAlive = true;
@@ -22,6 +22,14 @@ public class Enemy {
         }
     }
 
+    public String toString(){
+        if(isAlive == true){
+            return type + " with " + enemyHealth + " hp.";
+        } else {
+            return "[DEAD] " + type;
+        }
+    }
+
     public void damage(int amount){
         enemyHealth = enemyHealth - amount;
 
@@ -30,7 +38,12 @@ public class Enemy {
         if(enemyHealth <= 0){
             isAlive = false;
             System.out.println("The " + type + " has died.");
+            enemyCount--;
         }
+    }
+
+    public int attack(){
+        return damage;
     }
 
     public boolean isAlive(){
@@ -47,6 +60,10 @@ public class Enemy {
 
     public String getType(){
         return type;
+    }
+
+    public static int enemyCount(){
+        return enemyCount;
     }
 
 }

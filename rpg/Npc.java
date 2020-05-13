@@ -2,11 +2,11 @@ package rpg;
 
 public class Npc {
     
-    String name;
-    char gender;
-    boolean hasKeyA;
-    boolean hasKeyB;
-    boolean hasKeyC;
+    private String name;
+    private char gender;
+    private boolean hasKeyA;
+    private boolean hasKeyB;
+    private boolean hasKeyC;
 
     public Npc(String npcName, char npcGender){
         name = npcName;
