@@ -40,6 +40,7 @@ public class Dialogue {
                 if(npc.hasKey()){
                     player.giveKey(npc.getKey());
                     System.out.println("Here is my key!");
+                    npc.removeKey();
                     if(npc.getKey()=='a'){
                         System.out.println("\nYou have obtained Key A!");
                         player.giveKey('a');
@@ -80,6 +81,7 @@ public class Dialogue {
                 if(npc.hasKey()){
                     player.giveKey(npc.getKey());
                     System.out.println("Here is my key!");
+                    npc.removeKey();
                     if(npc.getKey()=='a'){
                         System.out.println("\nYou have obtained Key A!");
                         player.giveKey('a');
@@ -120,8 +122,8 @@ public class Dialogue {
                 if(npc.hasKey()){
                     player.giveKey(npc.getKey());
                     System.out.println("Here is my key!");
-
-                    if(npc.getKey()=='a'){
+                    npc.removeKey();
+                    if(npc.getKey()=='a'){ 
                         System.out.println("\nYou have obtained Key A!");
                         player.giveKey('a');
                     } else if(npc.getKey()=='b'){
@@ -162,7 +164,7 @@ public class Dialogue {
                 if(npc.hasKey()){
                     player.giveKey(npc.getKey());
                     System.out.println("Here is my key!");
-
+                    npc.removeKey();
                     if(npc.getKey()=='a'){
                         System.out.println("\nYou have obtained Key A!");
                         player.giveKey('a');
@@ -204,7 +206,7 @@ public class Dialogue {
                 if(npc.hasKey()){
                     player.giveKey(npc.getKey());
                     System.out.println("Here is my key!");
-
+                    npc.removeKey();
                     if(npc.getKey()=='a'){
                         System.out.println("\nYou have obtained Key A!");
                         player.giveKey('a');
@@ -266,7 +268,7 @@ public class Dialogue {
                 if(npc.hasKey()){
                     player.giveKey(npc.getKey());
                     System.out.println("I knew that object was similarly shaped like a key. Here, you take it.");
-                    
+                    npc.removeKey();
                     if(npc.getKey()=='a'){
                         System.out.println("\nYou have obtained Key A!");
                         player.giveKey('a');
@@ -302,6 +304,8 @@ public class Dialogue {
         " found in the Sol town. Once your character has 2 of those keys, they must journey to the cave to get " +
         "the last key from someone kidnapped there after defeating 3 enemies.\nYou are currently on a path to the town" +
         ", what would you like to do?");
+        System.out.println("(1) Continue to town.");
+        System.out.println("(2) Exit Game.");
 
     }
 
@@ -363,12 +367,25 @@ public class Dialogue {
         }
     }
 
-    public static void caveExposition(Player player, Enemy enemyOne, Enemy enemyTwo, Enemy enemyThree, Npc johnasuila)
+    public static void caveExposition(Player player)
             throws InterruptedException {
         System.out.println(player.toString());
-        System.out.println("You now find yourself in a cave and have been attacked!");
+        System.out.println("You follow the sign that says 'cave' down the path for a couple meters until you are "+
+        "greeted by a massive opening that goes deep, deep into the cave...\n Once inside the cave you venture forth " +
+        "until you get to an opening and hear a yell, all of a sudden, you are attacked!");
+    }
 
-        Combat.doCombat(player, enemyOne, enemyTwo, enemyThree, johnasuila);
+    public static void chestWin(){
+        System.out.println("You walk into the next part of the cave to see the chest, you take out your " + 
+        "3 keys and put each in the corresponding socket. As you open the chest, light envelops the room...");
+        System.out.println("You win!");
+    }
+
+    public static void chestLose(){
+        System.out.println("You walk into the next part of the cave to see the chest, you realize that you do not " + 
+        "have the keys required to open it. You hear a voice say 'foolish mortal, you do not have the required keys!'" +
+        " are the room starts to collapse around you...");
+        System.out.println("\n------\nGAME OVER\n------\n");
     }
 }
 

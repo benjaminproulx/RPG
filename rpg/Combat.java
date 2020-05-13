@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Combat {
     
-    public static void doCombat(Player player, Enemy enemyOne, Enemy enemyTwo, Enemy enemyThree, Npc npc)
+    public static void doCombat(Player player, Enemy enemyOne, Enemy enemyTwo, Enemy enemyThree)
             throws InterruptedException {
 
         Scanner sc = new Scanner(System.in);
@@ -61,14 +61,6 @@ public class Combat {
             }
 
         }
-
-        if(player.isPlayerAlive()){
-
-            Dialogue.cave(player, npc); // todo change Town for cave once martin finishes the cave method.
-
-        }
-
-
 
     }
 

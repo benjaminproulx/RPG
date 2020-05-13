@@ -52,4 +52,10 @@ public class Npc {
          return ' ';
     }
 
+    public void removeKey(){
+        hasKeyA = false;
+        hasKeyB = false;
+        hasKeyC = false;
+    }
+
 }
