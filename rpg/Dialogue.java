@@ -182,7 +182,7 @@ public class Dialogue {
     
     //-----------------------------------------------------------------------------------------------
     
-    public static void Cave(Player player, Npc npc, char key){ 
+    public static void Cave(Player player, Npc npc){ 
         
         int npcNumber;
         Scanner sc = new Scanner(System.in);
@@ -212,11 +212,11 @@ public class Dialogue {
                     player.giveKey(npc.getKey());
                     System.out.println("I knew that object was similarly shaped like a key. Here, you take it.");
                     
-                    if(key=='a'){
+                    if(npc.getKey()=='a'){
                         System.out.println("\nYou have obtained Key A!");
-                    } else if(key=='b'){
+                    } else if(npc.getKey()=='b'){
                         System.out.println("\nYou have obtained Key B!");
-                    } else if(key=='c'){
+                    } else if(npc.getKey()=='c'){
                         System.out.println("\nYou have obtained Key C!");
                     }
                         
