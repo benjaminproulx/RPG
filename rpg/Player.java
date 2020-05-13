@@ -13,16 +13,13 @@ public class Player {
     private boolean hasKeyC;
     private boolean isAlive = true;
 
-    public Player(String playerName){
-        playerName = playerName.toLowerCase();
-        playerName = playerName.substring(0,1).toUpperCase() + playerName.substring(1);
-        name = playerName;
+    public Player(){
         health = (int)(Math.random() * 10 + 10); // generates player health anywhere between 10-20 for variety every time you play.
         maxHealth = health;
     }
 
     public String toString() {
-        return "Name: " + name + "\nHealth: " + health + "\nInventory: " + keyAInventory + keyBInventory + keyCInventory;
+        return "\n\n\n\n\n\n\n\n----------------------------\n" + "Name: " + name + "\nHealth: " + health + "\nInventory: " + keyAInventory + keyBInventory + keyCInventory + "\n----------------------------";
     }
 
     public String getName(){
@@ -72,8 +69,26 @@ public class Player {
         return isAlive;
     }
 
+    public void setName(String playerName){
+        playerName = playerName.toLowerCase();
+        playerName = playerName.substring(0,1).toUpperCase() + playerName.substring(1);
+        name = playerName;
+    }
+
     public int attack(){
         return (int)(Math.random()*5 + 1);
+    }
+
+    public boolean hasKeyA(){
+        return hasKeyA;
+    }
+
+    public boolean hasKeyB(){
+        return hasKeyB;
+    }
+
+    public boolean hasKeyC(){
+        return hasKeyC;
     }
 
 }

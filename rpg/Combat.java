@@ -2,9 +2,11 @@ package rpg;
 
 import java.util.*;
 
+
 public class Combat {
     
-    public static void doCombat(Player player, Enemy enemyOne, Enemy enemyTwo, Enemy enemyThree, Npc npc){
+    public static void doCombat(Player player, Enemy enemyOne, Enemy enemyTwo, Enemy enemyThree, Npc npc)
+            throws InterruptedException {
 
         Scanner sc = new Scanner(System.in);
         int selection;
@@ -62,7 +64,7 @@ public class Combat {
 
         if(player.isPlayerAlive()){
 
-            Dialogue.Cave(player, npc); // todo change Town for cave once martin finishes the cave method.
+            Dialogue.cave(player, npc); // todo change Town for cave once martin finishes the cave method.
 
         }
 
