@@ -15,8 +15,8 @@ public class Dialogue {
         if(npcNumber==0){
             System.out.println(npc.getName());
             System.out.println("\nWhat would you like to do?");
-            System.out.println("\n(1) Ask about his day");
-            System.out.println("(2) Ask if he has a key");
+            System.out.println("\n(1) Ask about their day");
+            System.out.println("(2) Ask if they has a key");
             System.out.println("(0) Say Goodbye");
             
             input = sc.nextInt();
@@ -40,8 +40,8 @@ public class Dialogue {
         } else if(npcNumber==1){
             System.out.println(npc.getName());
             System.out.println("\nWhat would you like to do?");
-            System.out.println("\n(1) Ask about his day");
-            System.out.println("(2) Ask if he has a key");
+            System.out.println("\n(1) Ask about their day");
+            System.out.println("(2) Ask if they has a key");
             System.out.println("(0) Say Goodbye");
             
             input = sc.nextInt();
@@ -65,8 +65,8 @@ public class Dialogue {
         } else if(npcNumber==2){
             System.out.println(npc.getName());
             System.out.println("\nWhat would you like to do?");
-            System.out.println("\n(1) Ask about his day");
-            System.out.println("(2) Ask if he has a key");
+            System.out.println("\n(1) Ask about their day");
+            System.out.println("(2) Ask if they has a key");
             System.out.println("(0) Say Goodbye");
             
             input = sc.nextInt();
@@ -90,8 +90,8 @@ public class Dialogue {
         } else if(npcNumber==3){
             System.out.println(npc.getName());
             System.out.println("\nWhat would you like to do?");
-            System.out.println("\n(1) Ask about his day");
-            System.out.println("(2) Ask if he has a key");
+            System.out.println("\n(1) Ask about their day");
+            System.out.println("(2) Ask if they has a key");
             System.out.println("(0) Say Goodbye");
             
             input = sc.nextInt();
@@ -115,8 +115,8 @@ public class Dialogue {
         } else if(npcNumber==4){
             System.out.println(npc.getName());
             System.out.println("\nWhat would you like to do?");
-            System.out.println("\n(1) Ask about his day");
-            System.out.println("(2) Ask if he has a key");
+            System.out.println("\n(1) Ask about their day");
+            System.out.println("(2) Ask if they has a key");
             System.out.println("(0) Say Goodbye");
             
             input = sc.nextInt();
