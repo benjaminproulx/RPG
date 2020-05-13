@@ -29,3 +29,6 @@
 	if they have akey
 	player.givekey
 
+
+todo: make everything coherent lmao
+
