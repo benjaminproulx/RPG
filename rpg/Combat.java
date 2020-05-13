@@ -62,7 +62,7 @@ public class Combat {
 
         if(player.isPlayerAlive()){
 
-            Dialogue.Town(player, npc); // todo change Town for cave once martin finishes the cave method.
+            Dialogue.Cave(player, npc); // todo change Town for cave once martin finishes the cave method.
 
         }
 
