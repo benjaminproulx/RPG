@@ -351,7 +351,6 @@ public class Dialogue {
                 break;
                 case 6:
                 if(player.hasKeyB() && player.hasKeyC()) {
-                    // Dialogue.caveExposition();
                     proceed = false;
                 } else {
                     System.out.println("You do not have both of the keys, go get them!");
@@ -362,6 +361,14 @@ public class Dialogue {
                 break;
             }
         }
+    }
+
+    public static void caveExposition(Player player, Enemy enemyOne, Enemy enemyTwo, Enemy enemyThree, Npc johnasuila)
+            throws InterruptedException {
+        System.out.println(player.toString());
+        System.out.println("You now find yourself in a cave and have been attacked!");
+
+        Combat.doCombat(player, enemyOne, enemyTwo, enemyThree, johnasuila);
     }
 }
 
