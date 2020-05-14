@@ -6,7 +6,7 @@ import java.lang.Thread;
 /**
  * Basic dialogue methods for the game.
  * 
- * @author Martin Calero & Benjami Proulx
+ * @author Martin Calero & Benjamin Proulx
  */
 
 public class Dialogue {
@@ -38,7 +38,7 @@ public class Dialogue {
             Thread.sleep(200);
             System.out.println("\n(1) Ask about their dog");
             Thread.sleep(200);
-            System.out.println("(2) Ask if they has a key");
+            System.out.println("(2) Ask if they have a key");
             Thread.sleep(200);
             System.out.println("(0) Say Goodbye");
             
@@ -79,7 +79,7 @@ public class Dialogue {
             Thread.sleep(200);
             System.out.println("\n(1) Ask about their cat");
             Thread.sleep(200);
-            System.out.println("(2) Ask if they has a key");
+            System.out.println("(2) Ask if they have a key");
             Thread.sleep(200);
             System.out.println("(0) Say Goodbye");
             
@@ -120,7 +120,7 @@ public class Dialogue {
             Thread.sleep(200);
             System.out.println("\n(1) Ask about their day");
             Thread.sleep(200);
-            System.out.println("(2) Ask if they has a key");
+            System.out.println("(2) Ask if they have a key");
             Thread.sleep(200);
             System.out.println("(0) Say Goodbye");
             
@@ -162,7 +162,7 @@ public class Dialogue {
             Thread.sleep(200);
             System.out.println("\n(1) Ask about their shop");
             Thread.sleep(200);
-            System.out.println("(2) Ask if they has a key");
+            System.out.println("(2) Ask if they have a key");
             Thread.sleep(200);
             System.out.println("(0) Say Goodbye");
             
@@ -204,7 +204,7 @@ public class Dialogue {
             Thread.sleep(200);
             System.out.println("\n(1) Ask about the weather");
             Thread.sleep(200);
-            System.out.println("(2) Ask if they has a key");
+            System.out.println("(2) Ask if they have a key");
             Thread.sleep(200);
             System.out.println("(0) Say Goodbye");
             
