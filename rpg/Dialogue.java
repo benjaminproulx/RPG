@@ -6,7 +6,7 @@ import java.lang.Thread;
 /**
  * Basic dialogue methods for the game.
  * 
- * @author Martin Calero & Benjamin Proulx
+ * @author Martin Calero Benjamin Proulx
  */
 
 public class Dialogue {

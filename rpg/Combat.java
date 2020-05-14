@@ -19,6 +19,7 @@ public class Combat {
      * @param enemyOne first enemy to bring into combat
      * @param enemyTwo second enemy to bring into combat
      * @param enemyThree third enemy to bring into combat
+     * 
      * @throws InterruptedException
      */
     

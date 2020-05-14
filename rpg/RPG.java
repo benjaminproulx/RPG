@@ -3,7 +3,7 @@ package rpg;
 import java.util.*;
 
 /**
- * @author Benjamin Proulx & Martin Calero
+ * @author Benjamin Proulx Martin Calero
  */
 
 public class RPG{

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"rpg","l":"Combat"},{"p":"rpg","l":"Dialogue"},{"p":"rpg","l":"Enemy"},{"p":"rpg","l":"Npc"},{"p":"rpg","l":"Player"},{"p":"rpg","l":"RPG"}]
