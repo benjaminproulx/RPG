@@ -3,11 +3,24 @@ package rpg;
 import java.util.*;
 import java.lang.Thread;
 
+/**
+ * Basic dialogue methods for the game.
+ * 
+ * @author Martin Calero & Benjami Proulx
+ */
+
 public class Dialogue {
 
-    // martin this dialogue class is getting loooooooooooooooong
 
-    //-----------------------------------------------------------------------------------------------
+    /**
+     * 
+     * Town simulation that has you talk to an NPC based on random dialogue.
+     * 
+     * @author Martin Calero
+     * @param player player you want to bring into dialogue
+     * @param npc npc you want to bring into dialogue
+     * @throws InterruptedException
+     */
 
     public static void town(Player player, Npc npc) throws InterruptedException {
         
@@ -231,7 +244,15 @@ public class Dialogue {
         
     } 
     
-    //-----------------------------------------------------------------------------------------------
+    /**
+     * 
+     *  Cave simulation that has you talk to a specific NPC in the cave
+     * 
+     * @author Martin Calero
+     * @param player player you want to bring into dialogue
+     * @param npc npc you want to bring into dialogue
+     * @throws InterruptedException
+     */
     
     public static void cave(Player player, Npc npc) throws InterruptedException {
         
@@ -291,7 +312,11 @@ public class Dialogue {
         }
     }
 
-    //-----------------------------------------------------------------------------------------------
+    /**
+     * Basic story exposition
+     * @author Benjamin Proulx
+     * @param player player you want to assign a name and exposure to.
+     */
 
     public static void exposition(Player player){
 
@@ -309,7 +334,19 @@ public class Dialogue {
 
     }
 
-    //-----------------------------------------------------------------------------------------------
+    /**
+     * 
+     * NPC menu to find who to talk to.
+     * 
+     * @author Benjamin Proulx
+     * @param player player you want to bring into the menu
+     * @param npc1 first npc you want to bring into the menu
+     * @param npc2 2nd npc you want to bring into the menu
+     * @param npc3 3rd npc you want to bring into the menu
+     * @param npc4 4th npc you want to bring into the menu
+     * @param npc5 5th npc you want to bring into the menu
+     * @throws InterruptedException
+     */
 
     public static void townDescription(Player player, Npc npc1, Npc npc2, Npc npc3, Npc npc4, Npc npc5)
             throws InterruptedException {
@@ -367,6 +404,14 @@ public class Dialogue {
         }
     }
 
+    /**
+     * 
+     * Cave exposition
+     * 
+     * @author Benjamin Proulx
+     * @param player player you want to bring into the cave
+     * @throws InterruptedException
+     */
     public static void caveExposition(Player player)
             throws InterruptedException {
         System.out.println(player.toString());
@@ -375,12 +420,26 @@ public class Dialogue {
         "until you get to an opening and hear a yell, all of a sudden, you are attacked!");
     }
 
+    /**
+     * 
+     * This prints if you win
+     * 
+     * @author Benjamin Proulx
+     * 
+     */
     public static void chestWin(){
         System.out.println("You walk into the next part of the cave to see the chest, you take out your " + 
         "3 keys and put each in the corresponding socket. As you open the chest, light envelops the room...");
         System.out.println("You win!");
     }
 
+    /**
+     * 
+     * this prints if you lose
+     * 
+     * @author Benjamin Proulx
+     * 
+     */
     public static void chestLose(){
         System.out.println("You walk into the next part of the cave to see the chest, you realize that you do not " + 
         "have the keys required to open it. You hear a voice say 'foolish mortal, you do not have the required keys!'" +

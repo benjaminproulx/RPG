@@ -2,9 +2,16 @@ package rpg;
 
 import java.util.*;
 
+/**
+ * @author Benjamin Proulx & Martin Calero
+ */
+
 public class RPG{
 
-    // are ya coding son?
+    /**
+     * 
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws InterruptedException {
 
 
@@ -25,12 +32,15 @@ public class RPG{
         int selection;
         boolean hasKeyBC = false;
 
+        // CHALLENGE - All the dialogue is done from within the Dialogue.java class.
         Dialogue.exposition(player);
         selection = sc.nextInt();
 
         switch(selection){
             case 1:
             while(hasKeyBC == false){
+
+                // CHALLENGE - All the dialogue is done from within the Dialogue.java class.
                 Dialogue.townDescription(player, johnny, jack, jaqueline, jill, justine);
                 if(player.hasKeyB() && player.hasKeyC()){
                     hasKeyBC = true;
@@ -44,15 +54,20 @@ public class RPG{
         }
 
         if(hasKeyBC == true){
+            // CHALLENGE - All the dialogue is done from within the Dialogue.java class.
             Dialogue.caveExposition(player);
+            // CHALLENGE - The combat is done entirely outside of the main class, split between the Enemy class and the Combat class.
             Combat.doCombat(player, enemyOne, enemyTwo, enemyThree);
             if(player.isPlayerAlive()){
                 while(player.hasKeyA() == false){
+                // CHALLENGE - All the dialogue is done from within the Dialogue.java class.
                 Dialogue.cave(player, johnasuila);
                 }
                 if(player.hasKeyA() && player.hasKeyB() && player.hasKeyC()){
+                    // CHALLENGE - All the dialogue is done from within the Dialogue.java class.
                     Dialogue.chestWin();
                 } else {
+                    // CHALLENGE - All the dialogue is done from within the Dialogue.java class.
                     Dialogue.chestLose();
                 }
                 

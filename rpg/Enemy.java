@@ -1,5 +1,9 @@
 package rpg;
 
+/**
+ * @author Martin Calero
+ */
+
 public class Enemy {
     
     private static int enemyCount = 0;
@@ -7,7 +11,12 @@ public class Enemy {
     private String type;
     private boolean isAlive;
     private int damage;
-    
+
+    /**
+     * Enemy constructor, creates a random enemy.
+     * 
+     */
+
     public Enemy(){
         isAlive = true;
         enemyCount++;
@@ -22,6 +31,11 @@ public class Enemy {
         }
     }
 
+    /**
+     * Outputs the enemy as a string, even if the enemy were to die
+     * @return string
+     */
+
     public String toString(){
         if(isAlive == true){
             return type + " with " + enemyHealth + " hp.";
@@ -29,6 +43,12 @@ public class Enemy {
             return "[DEAD] " + type;
         }
     }
+
+    /**
+     * Damages the enemy
+     * @param amount amount of damage to be done to enemy HP
+     * 
+     */
 
     public void damage(int amount){
         enemyHealth = enemyHealth - amount;
@@ -42,26 +62,49 @@ public class Enemy {
         }
     }
 
+    /**
+     * Returns the damage that an enemy will do as an int
+     * @return int
+     * 
+     */
     public int attack(){
         return damage;
     }
+
+    /**
+     * Returns if the enemy is alive or not
+     * 
+     * @return boolean
+     */
 
     public boolean isAlive(){
         return isAlive;
     }
 
-    static int count(){
-        return enemyCount;
-    }
+    /**
+     * Returns an enemy's health pool
+     * @return
+     * 
+     */
 
     public int getHealth(){
         return enemyHealth;
     }
 
+    /**
+     * Return's an enemy's type.
+     * @return String
+     * 
+     */
     public String getType(){
         return type;
     }
 
+    /**
+     * Returns enemy count
+     * @return int
+     * 
+     */
     public static int enemyCount(){
         return enemyCount;
     }
